@@ -44,6 +44,9 @@ set(POLYFIT_glew_DIR                ${POLYFIT_ROOT}/3rd_glew)
 ### conditionally compile certain modules depending on libraries found on the system
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
+set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "D:/Softwares/boost_1_73_0")
+set(CGAL_DIR "D:/Softwares/CGAL-5.1")
+
 find_package(Boost REQUIRED)
 
 ################################################################################
