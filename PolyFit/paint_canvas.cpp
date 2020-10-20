@@ -713,7 +713,7 @@ void PaintCanvas::optimization() {
 	FaceSelection selector(point_set_, mesh);
 	selector.optimize(adjacency, main_window_->active_solver());
 
-#if 0 // not stable!!!
+#if 1 // not stable!!!
     { // to have consistent orientation for the final model
         const HypothesisGenerator::Adjacency& adjacency = hypothesis_->extract_adjacency(mesh);
         selector.re_orient(adjacency, main_window_->active_solver());
