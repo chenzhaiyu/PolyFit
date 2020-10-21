@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.1)
 get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 project(PolyFit)
 
+set(Qt5Core_DIR "/usr/local/Cellar/qt/5.15.1/lib/cmake/Qt5Core")
+set(Qt5_DIR "/usr/local/Cellar/qt/5.15.1/lib/cmake/Qt5")
+
 # One shouldn't generate the BUILD project directly in the SOURCES folder!
 if ( ${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR} )
         if ( NOT SAME_BUILD_AND_SOURCE_FOLDER_WARNING_ALREADY_ISSUED )
